@@ -34,11 +34,39 @@
             <button class="btn btn-success mt-3" onclick="resetGame()">Play Again</button>
         </div>
     </div>
-    fy-content-center my-4">
-            <div class="slot"><img id="slot1" src="images/default.png" class="slot-img"></div>
-            <div class="slot"><img id="slot2" src="images/default.png" class="slot-img"></div>
-            <div class="slot"><img id="slot3" src="images/default.png" class="slot-img"></div>
+   <div class="container mt-5">
+    <h2 class="mb-4">Fruit Multipliers</h2>
+        <h4 class="">Match all three to activate the multiplier!</h4>
+    <div class="row text-center">
+        <!-- Row 1 -->
+        <div class="col-4">
+            <img src="images/cherries.png" class="fruit-img" alt="Cherries">
+            <p>Cherries: x100</p>
         </div>
+        <div class="col-4">
+            <img src="images/oranges.png" class="fruit-img" alt="Oranges">
+            <p>Oranges: x25</p>
+        </div>
+        <!-- Row 2 -->
+        <div class="col-4">
+            <img src="images/plums.png" class="fruit-img" alt="Plums">
+            <p>Plums: x6</p>
+        </div>
+        <div class="col-4">
+            <img src="images/bananas.png" class="fruit-img" alt="Bananas">
+            <p>Bananas: x15</p>
+        </div>
+        <!-- Row 3 -->
+        <div class="col-4">
+            <img src="images/melons.png" class="fruit-img" alt="Melons">
+            <p>Melons: x8</p>
+        </div>
+        <div class="col-4">
+            <img src="images/pineapples.png" class="fruit-img" alt="Pineapples">
+            <p>Pineapples: x50</p>
+        </div>
+    </div>
+</div>
         <audio id="jackpotSound" src="./audio/jackpot.mp3"></audio>
         <h3 id="resultMessage"></h3>
         <h4 id="totalAmount"></h4>
