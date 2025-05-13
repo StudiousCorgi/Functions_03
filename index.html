@@ -1,11 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Retro Slot Machine</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
-<body>
-    
+<body class="bg-dark text-white text-center p-4">
+    <div class="container">
+        <h1 class="display-4 mb-4">Slot Machine</h1>
+        <div class="mb-3">
+            <label for="betAmount" class="form-label">Insert Money:</label>
+            <select id="betAmount" class="form-select w-50 mx-auto">
+                <option value="1">$1</option>
+                <option value="5">$5</option>
+                <option value="10">$10</option>
+                <option value="25">$25</option>
+                <option value="100">Max ($100)</option>
+            </select>
+        </div>
+        <button class="btn btn-warning mb-3" onclick="spin()">Pull Lever!</button>
+        <audio id="crankSound" src="./audio/crank.mp3"></audio>
+        <div class="slot-machine d-flex justify-content-center my-4">
+        <div class="slot"><img id="slot1" src="./images/cherries.png" class="slot-img"></div>
+        <div class="slot"><img id="slot2" src="./images/oranges.png" class="slot-img"></div>
+        <div class="slot"><img id="slot3" src="./images/plums.png" class="slot-img"></div>
+    </div>
+    <div class="text-center">
+        <h3 id="resultMessage"></h3>
+        <h4 id="totalAmount"></h4>
+        <div id="playAgain" class="d-none">
+            <button class="btn btn-success mt-3" onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+    fy-content-center my-4">
+            <div class="slot"><img id="slot1" src="images/default.png" class="slot-img"></div>
+            <div class="slot"><img id="slot2" src="images/default.png" class="slot-img"></div>
+            <div class="slot"><img id="slot3" src="images/default.png" class="slot-img"></div>
+        </div>
+        <audio id="jackpotSound" src="./audio/jackpot.mp3"></audio>
+        <h3 id="resultMessage"></h3>
+        <h4 id="totalAmount"></h4>
+        <div id="playAgain" class="d-none">
+            <button class="btn btn-success mt-3" onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
