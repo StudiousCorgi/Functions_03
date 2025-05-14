@@ -3,11 +3,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Retro Slot Machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fun and interactive slot machine game.">
+    <title>Slot Machine</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body class="bg-dark text-white text-center p-4">
+    
+    <!--Slot Machine Container -->
     <div class="container">
         <h1 class="display-4 mb-4">Slot Machine</h1>
         <div class="mb-3">
@@ -17,7 +21,10 @@
                 <option value="5">$5</option>
                 <option value="10">$10</option>
                 <option value="25">$25</option>
-                <option value="100">Max ($100)</option>
+                <option value="100">$100</option>
+                <option value="500">$500</option>
+                <option value="1000">Max ($1000)</option>
+
             </select>
         </div>
         <button class="btn btn-warning mb-3" onclick="spin()">Pull Lever!</button>
@@ -27,6 +34,8 @@
         <div class="slot"><img id="slot2" src="./images/oranges.png" class="slot-img"></div>
         <div class="slot"><img id="slot3" src="./images/plums.png" class="slot-img"></div>
     </div>
+
+    <!--Results and Payouts-->
     <div class="text-center">
         <h3 id="resultMessage"></h3>
         <h4 id="totalAmount"></h4>

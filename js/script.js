@@ -18,12 +18,15 @@ function spin() {
 
     const bet = parseInt(document.getElementById('betAmount').value);
     totalBet += bet;
+    console.log("Total Bet: ", totalBet);
 
     const results = [getRandomFruit(), getRandomFruit(), getRandomFruit()];
     displaySlots(results);
+    console.log("Results: ", results);
 
     let payout = calculatePayout(results, bet);
     totalWin += payout;
+    console.log("Payout: ", payout);
 
     displayResult(payout);
 }
