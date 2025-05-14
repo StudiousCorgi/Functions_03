@@ -66,7 +66,7 @@ function calculatePayout(results, bet) {
     if (a === b && b === c) {
         return bet * payouts[a];
     } else if (a === b || b === c || a === c) {
-        return bet * 2;
+        return bet * 1;
     } else {
         return 0;
     }
